@@ -1,0 +1,54 @@
+/* _______________ FOOTER _______________ */
+.footer {
+  padding: 20px 0;
+  margin-top: 50px;
+  background-color: $footer-background;
+  color: $footer-color;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__container-inner {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 25px;
+  }
+
+  &__policy {
+    text-transform: uppercase;
+    font-family: 'TTNorms';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    word-spacing: 1%;
+    margin-bottom: 15px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__copy {
+    color: $text-copy;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 26px;
+  }
+}
+
+@media(max-width: 768px) {
+  .footer {
+    margin-top: 40px;
+
+    &__container-inner {
+      flex-direction: column;
+      gap: 20px;
+      align-items: flex-start;
+    }
+  }
+}

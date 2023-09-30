@@ -1,0 +1,199 @@
+// __________ modals_access __________
+.access {
+  .modal {
+    &__bg {
+      background-color: #fff;
+      padding: 0;
+    }
+
+    &__body {
+      max-width: 100vw;
+      width: 100%;
+      max-height: 100vh;
+      height: 100vh;
+      padding-top: 20vh;
+    }
+  }
+
+  &__timer {
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 800;
+    background-image: $gradient;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  &__inputs {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  &__input {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ededed;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 22px;
+    max-width: 60px;
+    max-height: 60px;
+    height: 100%;
+
+    &:focus {
+      outline: 2px solid lightblue;
+    }
+  }
+
+  &__block-new-code {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &__new-code {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: underline;
+    color: #C2C4C5;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    max-width: 250px;
+    margin: 0 auto;
+
+    &:disabled {
+      text-decoration: none;
+      opacity: 0.5;
+      cursor: default;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__btn.btn {
+    max-width: 60px;
+    max-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:focus {
+      outline: 2px solid lightblue;
+    }
+  }
+
+  .btn.modal__close {
+    display: block;
+    margin: 0 auto;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    display: none;
+    margin: 0;
+  }
+
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  //_____ Убрать для firefox _____
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  input[type="number"]:hover,
+  input[type="number"]:focus {
+    -moz-appearance: number-input;
+  }
+  //_____ /Убрать для firefox _____
+
+
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &__error {
+    color: #FF521C;
+    text-align: center;
+    visibility: visible;
+    transform: scale(1);
+    opacity: 1;
+    transition: opacity .3s, transform .3s;
+
+    .component-link__icon {
+      margin-right: 11px;
+    }
+  }
+
+  &__error.hidden {
+    visibility: hidden;
+    transform: scale(0);
+    opacity: 0;
+    transition: opacity .3s, transform .3s;
+    height: 0;
+  }
+}
+
+// __________ Responsive modal_access__________
+@media(max-width: 768px) {
+  .access {
+    .modal {
+      &__body {
+        padding-top: 20vh;
+      }
+    }
+
+    &__timer {
+      font-size: 36px;
+      line-height: 42px;
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      font-size: 36px;
+      line-height: 42px;
+      margin-bottom: 35px
+    }
+
+    &__form {
+      margin-bottom: 25px;
+    }
+
+    &__inputs {
+      gap: 7px;
+    }
+
+    &__input {
+      max-width: 50px;
+      max-height: 50px;
+    }
+  }
+}

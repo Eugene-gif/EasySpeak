@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  @@include('parts/favicons.html')
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/main.js" type="module"></script>
+  <title>Говори легко</title>
+</head>
+
+<body class="body index">
+
+  @@include('layouts/header.html')
+
+  <!-- __________ M A I N __________ -->
+  <main class="main">
+    <div class="container">
+      <div class="app _content _show" data-screen="02">
+        @@include('parts/section_greet.html')
+        @@include('parts/section_path.html')
+        @@include('parts/section_heroes.html')
+        @@include('components/basket.html')
+      </div>
+      @@include('parts/shopping-cart.html')
+      @@include('parts/hero1.html')
+      @@include('parts/hero2.html')
+      @@include('parts/hero3.html')
+      @@include('parts/hero4.html')
+      @@include('parts/hero5.html')
+      @@include('parts/hero6.html')
+      @@include('parts/hero7.html')
+      @@include('parts/hero8.html')
+      @@include('parts/hero9.html')
+      @@include('parts/hero10.html')
+
+      @@include('parts/payment_success.html')
+      @@include('modals/modals_login.html')
+      @@include('modals/modals_access.html')
+      @@include('modals/modals_exit.html')
+      @@include('modals/modals_delete.html')
+      @@include('modals/modals_signin.html')
+      @@include('modals/modals_pay.html')
+      @@include('parts/profile.html')
+    </div>
+  </main>
+
+  @@include('layouts/footer.html')
+
+  <script src="js/main.js" type="module"></script>
+</body>
+
+</html>

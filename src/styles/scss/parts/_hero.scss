@@ -1,0 +1,184 @@
+// __________ hero __________
+.hero {
+  &__block {
+    margin-bottom: 50px;
+    display: flex;
+    gap: 50px;
+  }
+
+  &__img {
+    max-width: 507px;
+    height: 350px;
+    width: 100%;
+    border: 2px solid $border-hero;
+    border-radius: 30px;
+    padding: 25px;
+
+    img {
+      max-width: 315px;
+      max-height: 362px;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__name {
+    margin-bottom: 5px;
+    font-weight: 500;
+    line-height: 56px;
+    font-size: 48px;
+  }
+
+  &__status {
+    font-family: 'TTFirsNeue';
+    margin-bottom: 20px;
+    background-image: $gradient;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    line-height: 82px;
+    font-size: 64px;
+  }
+
+  &__description {
+    font-family: 'TTFirsNeue';
+    font-weight: 400;
+    margin-bottom: 50px;
+    font-size: 20px;
+    line-height: 28px;
+    color: $grey;
+  }
+
+  &__buy {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  &__buy-btn {
+    min-width: 190px;
+  }
+
+  &__buy-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  &__download.btn {
+    max-width: 230px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+
+    .component-link__icon {
+      margin-right: 0;
+    }
+  }
+
+  .hero__btn-status {
+    display: none;
+  }
+
+  .hero__btn-status.active {
+    display: flex;
+  }
+}
+
+// __________ Responsive hero __________
+@media(max-width: 1200px) {
+  .hero {
+    &__buy {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__buy-btn {
+      order: 1;
+    }
+  }
+}
+
+@media(max-width: 998px) {
+  .hero {
+    &__block {
+      gap: 30px;
+    }
+  }
+
+  @media(max-width: 900px) {
+    .hero {
+
+      &__text-block {
+        width: 100%;
+      }
+
+      &__name {
+        font-size: 32px;
+        line-height: 38px;
+      }
+
+      &__status {
+        font-size: 36px;
+        line-height: 42px;
+      }
+
+      &__description {
+        margin-bottom: 30px;
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+
+  }
+
+  @media(max-width: 768px) {
+    .hero {
+      &__block {
+        flex-direction: column;
+        align-items: center;
+      }
+
+
+      &__name {
+        text-align: center;
+      }
+
+      &__status {
+        text-align: center;
+      }
+
+      &__description {
+        text-align: center;
+      }
+
+      &__buy-btn.btn {
+        order: 0;
+        max-width: 100%;
+        width: 100%;
+      }
+
+      &__download.btn {
+        max-width: 100%;
+
+        svg {
+          margin: 0;
+        }
+      }
+
+      &__buy-text {
+        text-align: center;
+      }
+
+      .sale {
+        display: none;
+      }
+    }
+  }
+}

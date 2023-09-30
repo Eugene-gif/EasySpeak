@@ -1,0 +1,196 @@
+// __________ modals_login __________
+.login {
+  .modal {
+    &__bg {
+      background-color: #fff;
+      padding: 0;
+    }
+
+    &__body {
+      max-width: 100vw;
+      width: 100%;
+      max-height: 100vh;
+      height: 100vh;
+      padding-top: 20vh;
+
+      .modal-content.modal__callback {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &__logo {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+
+  &__title {
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    align-items: flex-start;
+    // justify-content: center;
+  }
+
+  // &__block-email {
+  //   text-align: center;
+  // }
+
+  &__input {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #ededed;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+    &:focus {
+      outline: 2px solid lightblue;
+    }
+  }
+
+  ._error-text {
+    color: #FF521C;
+    text-align: center;
+    visibility: visible;
+    transform: scale(1);
+    opacity: 1;
+    transition: opacity .3s, transform .3s;
+
+    .component-link__icon {
+      margin-right: 11px;
+    }
+  }
+
+  ._error-text.hidden {
+    transition: opacity .3s, transform .3s;
+    transform: scale(0);
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+  }
+
+  &__btn.btn {
+    max-width: 60px;
+    max-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+
+    &:focus {
+      outline: 2px solid lightblue;
+    }
+
+    &[disabled] {
+      opacity: .4;
+      cursor: default;
+
+      &:focus,
+      &:active {
+        outline: 0px solid;
+      }
+    }
+  }
+
+  &__btn.btn:nth-of-type(2) {
+    display: none;
+  }
+
+  &__btn-img {
+    margin-bottom: -3px;
+  }
+
+  .btn.modal__close {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+// __________ Responsive modals_login __________
+@media(max-width: 768px) {
+  .login {
+    .modal {
+      &__body {
+        padding-top: 5vh;
+      }
+    }
+
+    &__logo {
+      .logo__title {
+        display: none;
+      }
+    }
+
+    &__title {
+      font-size: 36px;
+      line-height: 42px;
+      font-weight: 500;
+      margin-bottom: 10px
+    }
+
+    &__text {
+      margin-bottom: 35px;
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 500;
+    }
+
+    &__form {
+      flex-direction: column;
+    }
+
+    &__block-email {
+      text-align: center;
+      width: 100%;
+    }
+
+    &__input {
+      padding: 17px 20px;
+    }
+
+    &__btn.btn:nth-of-type(1) {
+      display: none;
+    }
+
+    &__btn.btn:nth-of-type(2) {
+      display: block;
+      padding: 18px 20px;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 22px;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}
+
+@media(max-width: 385px) {
+  .login {
+    &__title {
+      span {
+        display: block;
+      }
+    }
+  }
+}

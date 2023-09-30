@@ -1,0 +1,15 @@
+.component-link {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &__icon {
+    margin-right: 17px;
+  }
+
+  &:hover {
+    color: $hover-orange;
+  }
+}

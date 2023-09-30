@@ -1,0 +1,36 @@
+<button class="btn modal__btn _modal-open" data-modal-open="modal-login">
+  Залогиниться!
+</button>
+
+<div class="modal _modal login" data-modal="modal-login">
+  <div class="modal__bg">
+    <div class="modal__body">
+      <div class="modal__close">
+      </div>
+      <div class="modal-content modal__callback">
+        <div class="logo login__logo">
+          <a class="logo__link" href="index.html">
+            <img class="logo__img" src="img/svg/logo.svg" alt="logo">
+          </a>
+          <h3 class="logo__title">Говори легко</h3>
+        </div>
+        <div class="login__title">
+          Введите ваш e-mail
+        </div>
+        <p class="login__text">
+          Для регистрации укажите свой e-mail и получите на него код регистрации
+        </p>
+        <form class="login__form" action="post">
+          <input class="login__input" type="email" placeholder="E-mail">
+          <button class="login__btn btn filled" type="submit">
+            <img class="login__btn-img" src="img/svg/right.svg" width="35" height="35" alt="arrow-right">
+          </button>
+          <button class="login__btn btn filled" type="submit">
+            Получить код
+          </button>
+        </form>
+        <button class="btn modal__close">Назад</button>
+      </div>
+    </div>
+  </div>
+</div>

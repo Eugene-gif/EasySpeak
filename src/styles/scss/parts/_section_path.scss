@@ -1,0 +1,72 @@
+// __________ path __________
+.path {
+  background-image: url("../img/arrows-path.webp");
+  background-repeat: no-repeat;
+  background-position: 49% 10%;
+  background-size: 67%;
+  margin-top: 115px;
+  margin-bottom: 90px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+
+  &__item {
+    max-width: 279px;
+    text-align: center;
+  }
+
+  &__item-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: $gradient;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px auto;
+
+    img {
+      margin-top: 5px;
+    }
+  }
+
+  &__item-title {
+    font-family: 'TTFirsNeue';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+
+  &__item-text {
+    font-family: 'TTFirsNeue';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $text-color4;
+  }
+}
+
+// __________ Responsive path __________
+
+@media(max-width: 868px) {
+  .path {
+    background-position: 49% 10%;
+    background-size: 65%;
+  }
+}
+
+@media(max-width: 768px) {
+  .path {
+    margin: 50px 0;
+    background-image: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    &__item-img {
+      margin-bottom: 15px;
+    }
+  }
+}

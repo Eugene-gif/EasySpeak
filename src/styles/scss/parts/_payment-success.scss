@@ -1,0 +1,82 @@
+// __________ payment-success __________
+.payment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__circle.circle {
+    margin-bottom: 25px;
+
+    img {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &__list-cards {
+    margin-bottom: 30px;
+  }
+
+  &__links {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__btn-download.btn {
+    display: none;
+  }
+}
+
+// __________ Responsive payment-success __________
+@media(max-width: 768px) {
+  .payment {
+    &__circle.circle {
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+      font-size: 32px;
+      line-height: 38px;
+    }
+
+    &__text {
+      margin-bottom: 20px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    &__list-cards {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media(max-width: 668px) {
+  .payment {
+    &__links {
+      display: none;
+    }
+
+    &__btn-download.btn {
+      display: block;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}

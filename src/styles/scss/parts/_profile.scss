@@ -1,0 +1,102 @@
+// __________ profile __________
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__circle {
+    margin-bottom: 25px;
+  }
+
+  &__title {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 56px;
+    margin-bottom: 15px;
+  }
+
+  &__email {
+    font-family: 'TTFirsNeue';
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 500;
+    color: $grey;
+    margin-bottom: 20px;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  &__buttons-mobile {
+    display: none;
+  }
+
+  &__acquired-blank {
+    margin-bottom: 30px;
+    display: none;
+  }
+
+  &__message {
+    font-weight: 400;
+    line-height: 38px;
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  &__btn-buy {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+// __________ Responsive profile __________
+
+@media(max-width: 768px) {
+  .profile {
+    &__circle {
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 38px;
+      margin-bottom: 10px;
+    }
+
+    &__email {
+      margin-bottom: 30px;
+    }
+
+    &__buttons {
+      display: none;
+    }
+
+    &__buttons-mobile {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 50px;
+    }
+
+    &__message {
+      text-align: center;
+    }
+  }
+}
+
+@media(max-width: 450px) {
+  .profile {
+    &__buttons-mobile {
+      gap: 10px;
+
+      .btn.modal__btn {
+        font-size: 12px;
+        width: 140px;
+        padding: 10px;
+      }
+    }
+  }
+}

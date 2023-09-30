@@ -1,0 +1,31 @@
+// __________ Parts __________
+@import "parts/_vars";
+@import "parts/_fonts";
+@import "parts/_global";
+//_____
+@import "parts/_block_sale";
+@import "parts/_block_card-item";
+@import "parts/_routes";
+@import "parts/_section_heroes";
+@import "parts/_section_greet";
+@import "parts/_section_path";
+@import "parts/_profile";
+@import "parts/_shopping-cart";
+@import "parts/_hero";
+@import "parts/_payment-success";
+
+// __________ Layouts __________
+@import "layouts/_header";
+@import "layouts/_footer";
+
+// __________ Components __________
+@import "components/_btn";
+@import "components/_link";
+@import "components/_circle";
+@import "components/_basket";
+
+// __________ Modals __________
+@import "modals/_modals";
+@import "modals/_modals_status";
+@import "modals/_modals_login";
+@import "modals/_modals_access";

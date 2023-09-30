@@ -1,0 +1,176 @@
+// __________ heroes __________
+.heroes {
+  &__title {
+    font-family: 'TTNorms';
+    text-align: center;
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    margin-top: 40px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  }
+
+  &__card {
+    max-width: 275px;
+    height: 431px;
+    width: 100%;
+    padding: 25px 25px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #0000001c;
+    border-radius: 25px;
+
+    &.none {
+      display: none;
+    }
+  }
+
+  &__card-img {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 190px;
+    max-height: 210px;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__card-name {
+    font-family: 'TTFirsNeue';
+    font-weight: 500;
+    line-height: 35px;
+    font-size: 24px;
+  }
+
+  &__card-price {
+    font-family: 'TTFirsNeue';
+    font-size: 32px;
+    line-height: 35px;
+    font-weight: 600;
+    background-image: $gradient;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+  }
+}
+
+// _____ Checkbox
+
+.heroes__card-checkbox {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+  width: 75%;
+  align-self: flex-end;
+  text-align: center;
+}
+
+.check__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  padding-left: 20px;
+
+  &:checked+.check__span {
+    background: $gradient;
+    box-shadow: none;
+
+    span {
+      border-color: white;
+    }
+
+    span::before {
+      content: "";
+      width: 3px;
+      height: 11px;
+      background-color: #fff;
+      position: absolute;
+      top: 32%;
+      left: 22%;
+      transform: rotate(-35deg);
+      border-radius: 5px;
+    }
+
+    span::after {
+      content: "";
+      width: 3px;
+      height: 16px;
+      background-color: white;
+      position: absolute;
+      top: 12%;
+      left: 55%;
+      border-radius: 5px;
+      transform: rotate(35deg);
+    }
+  }
+}
+
+.check__span {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px orange;
+  margin-left: -60px;
+  margin-top: -16px;
+  cursor: pointer;
+
+  span {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 3px solid #272727;
+    margin-left: 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+// __________ Responsive heroes__________
+@media(max-width: 1200px) {
+  .heroes {
+    &__title {
+      text-align: center;
+      font-size: 32px;
+      line-height: 38px;
+      font-weight: 500;
+    }
+
+    &__card {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .heroes {
+    &__title {
+      margin-bottom: 0;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      .sale {
+        order: 1;
+      }
+    }
+  }
+}

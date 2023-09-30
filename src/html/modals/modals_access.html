@@ -1,0 +1,33 @@
+<div class="modal _modal access" data-modal="modal-access">
+  <div class="modal__bg">
+    <div class="modal__body">
+      <div class="access__content">
+        <div class="access__timer timer_show">
+        </div>
+        <div class="access__title">
+          Введите код доступа
+        </div>
+        <form class="access__form">
+          <span class="access__error hidden">
+            <img class="component-link__icon" src="img/svg/error.svg" alt="error">Ошибка!
+          </span>
+          <div class="access__inputs">
+            <input class="access__input" type="number" maxlength="1" min="0" max="9">
+            <input class="access__input" type="number" maxlength="1" min="0" max="9">
+            <input class="access__input" type="number" maxlength="1" min="0" max="9">
+            <input class="access__input" type="number" maxlength="1" min="0" max="9">
+            <input class="access__input" type="number" maxlength="1" min="0" max="9">
+          </div>
+        </form>
+
+        <div class="access__block-new-code">
+          <button type="button" class="access__new-code btn-run-timer">
+            Отправить новый код
+          </button>
+        </div>
+        <button class="btn btn-clear-timer modal__close modal__btn _modal-open access__back"
+          data-modal-open="modal-login">Назад</button>
+      </div>
+    </div>
+  </div>
+</div>

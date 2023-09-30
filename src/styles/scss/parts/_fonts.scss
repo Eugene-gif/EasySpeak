@@ -1,0 +1,68 @@
+/* __________ Fonts __________ */
+@font-face {
+  font-family: 'TTNorms';
+  src: url('../resources/fonts/TTNorms-Regular.woff') format('woff'),
+    url('../resources/fonts/TTNorms-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TTNorms';
+  src: url('../resources/fonts/TTNorms-Medium.woff') format('woff'),
+    url('../resources/fonts/TTNorms-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TTNorms';
+  src: url('../resources/fonts/TTNorms-Bold.woff') format('woff'),
+    url('../resources/fonts/TTNorms-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TTNorms';
+  src: url('../resources/fonts/TTNorms-ExtraBold.woff') format('woff'),
+    url('../resources/fonts/TTNorms-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TTFirsNeue';
+  src: url('../resources/fonts/TTFirsNeue-Regular.woff') format('woff'),
+    url('../resources/fonts/TTFirsNeue-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TTFirsNeue';
+  src: url('../resources/fonts/TTFirsNeue-Medium.woff') format('woff'),
+    url('../resources/fonts/TTFirsNeue-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TTFirsNeue';
+  src: url('../resources/fonts/TTFirsNeue-DemiBold.woff') format('woff'),
+    url('../resources/fonts/TTFirsNeue-DemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+.body {
+  font-family: 'TTNorms', 'TTFirsNeue', sans-serif;
+  font-size: 1.3rem;
+}

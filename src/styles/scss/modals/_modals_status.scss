@@ -1,0 +1,91 @@
+// __________ modals-status __________
+.status {
+  .modal {
+    &__body {
+      max-width: 507px;
+      padding: 40px 30px;
+      text-align: center;
+    }
+
+    &__title {
+      margin-bottom: 15px;
+      font-weight: 500;
+      line-height: 42px;
+      font-size: 36px;
+    }
+
+    &__text {
+      margin-bottom: 30px;
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: 400;
+      color: $grey;
+    }
+
+    &__btns {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+}
+.status.signin, .status.pay {
+  .modal {
+    &__title {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.status.pay {
+  .modal {
+    &__btns {
+      justify-content: center;
+    }
+  }
+}
+
+// __________ Responsive modals-status __________
+@media(max-width: 998px) {}
+
+@media(max-width: 868px) {}
+
+@media(max-width: 768px) {
+  .status {
+    .modal {
+      &__body {
+        max-width: 330px;
+        padding: 30px 20px;
+      }
+
+      &__title {
+        margin-bottom: 10px;
+        font-size: 24px;
+        line-height: 28px;
+      }
+
+      &__text {
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      &__btns {
+        flex-direction: column;
+        gap: 10px;
+
+        .btn {
+          max-width: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .status.signin, .status.pay {
+    .modal {
+      &__title {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

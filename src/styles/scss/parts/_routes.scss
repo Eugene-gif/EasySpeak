@@ -1,0 +1,21 @@
+// __________ Show content __________
+._content._show, .hero._show {
+  font-size: 1.4rem;
+  visibility: visible;
+  transform: scale(1);
+  opacity: 1;
+  height: auto;
+}
+
+._content, .hero {
+  font-size: 0;
+  visibility: hidden;
+  transform: scale(0);
+  opacity: 0;
+  transition: opacity .3s, transform .3s;
+  height: 0;
+}
+
+._btn-content {
+  cursor: pointer;
+}

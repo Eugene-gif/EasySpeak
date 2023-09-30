@@ -1,0 +1,41 @@
+<div class="modal _modal login" data-modal="modal-login">
+  <div class="modal__bg">
+    <div class="modal__body">
+      <div class="modal-content modal__callback">
+        <div class="logo login__logo">
+          <div class="logo__link">
+            <img class="logo__img" src="img/svg/logo.svg" alt="logo">
+          </div>
+          <h3 class="logo__title">Говори легко</h3>
+        </div>
+        <div class="login__title">
+          Введите ваш <span>e-mail</span>
+        </div>
+        <p class="login__text">
+          Для регистрации укажите свой e-mail и получите на него код регистрации
+        </p>
+        <!-- _____ login__form _____ -->
+        <form id="login__form" class="login__form">
+
+          <div class="login__block-email">
+            <span class="_error-text hidden">
+              <img class="component-link__icon" src="img/svg/error.svg" alt="error"> Введите корректный email</span>
+            <input class="login__input" type="email" tabindex="1" placeholder="E-mail" value="">
+          </div>
+
+          <button disabled class="login__btn btn btn-run-timer filled modal__btn _modal-open" data-modal-open="modal-access"
+            type="submit" tabindex="1">
+            <img class="login__btn-img" src="img/svg/right.svg" width="35" height="35" alt="arrow-right">
+          </button>
+
+          <button disabled class="login__btn login__btn--mobile btn-run-timer btn filled modal__btn _modal-open"
+            data-modal-open="modal-access" type="submit" tabindex="1">
+            Получить код
+          </button>
+        </form>
+        <!-- _____ /login__form _____ -->
+        <button class="btn modal__close _clear-email">Назад</button>
+      </div>
+    </div>
+  </div>
+</div>
